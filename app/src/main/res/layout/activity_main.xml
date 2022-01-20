@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006">
+
+        <Button
+            android:id="@+id/button_def"
+            android:layout_width="67dp"
+            android:layout_height="35dp"
+            android:background="#509BDD"
+            android:text="def"
+            android:textAllCaps="false"
+            android:textColor="#FAF8F8"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_if"
+            android:layout_width="67dp"
+            android:layout_height="35dp"
+            android:background="#509BDD"
+            android:text="if"
+            android:textAllCaps="false"
+            android:textColor="#FAF8F8"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_tab3"
+            android:layout_width="67dp"
+            android:layout_height="35dp"
+            android:background="#509BDD"
+            android:text="Tab"
+            android:textAllCaps="false"
+            android:textColor="#FAF8F8"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_println"
+            android:layout_width="67dp"
+            android:layout_height="35dp"
+            android:background="#509BDD"
+            android:text="print"
+            android:textAllCaps="false"
+            android:textColor="#FAF8F8"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_quote"
+            android:layout_width="67dp"
+            android:layout_height="35dp"
+            android:background="#509BDD"
+            android:text='"'
+            android:textAllCaps="false"
+            android:textColor="#FAF8F8"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_semi"
+            android:layout_width="67dp"
+            android:layout_height="35dp"
+            android:background="#509BDD"
+            android:text=":"
+            android:textAllCaps="false"
+            android:textColor="#FAF8F8"
+            android:textSize="12sp" />
+    </TableRow>
+
+    <compilers.ybdesire.com.pycompiler.CodeEditText
+        android:id="@+id/text_input_code"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:textCursorDrawable="@drawable/black_cursor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191" />
+
+
+    <Button
+        android:id="@+id/button_compile"
+        style="@android:style/Widget.Material.Light.Button.Toggle"
+        android:layout_width="201dp"
+        android:layout_height="46dp"
+        android:background="#FAF9F9"
+        android:text="@string/str_btn_run"
+        android:textAllCaps="false"
+        android:textColor="#304FFE"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.626"
+        tools:text="Click to Compile" />
+
+    <TextView
+        android:id="@+id/txt_output"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:scrollbars="vertical"
+        android:text="@string/str_txt_output"
+        android:textColor="#141823"
+        android:textSize="20sp"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="fill_parent"
+        android:layout_height="69dp"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.984">
+
+    </TableRow>
+
+
+</android.support.constraint.ConstraintLayout>
